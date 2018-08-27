@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { getInitData } from '../App/../../api/bootstrap';
-import './App.css';
+import { getInitData } from '../../../api/bootstrap';
 
-class App extends Component {
+import './home.css';
+
+export class Home extends Component {
 
   componentDidMount() {
     getInitData().then(data => {
@@ -18,5 +19,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
