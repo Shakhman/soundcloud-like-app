@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd laradock
+
+docker-compose up -d --force-recreate nginx redis php-fpm mysql phpmyadmin php-worker
+
+cd ..
